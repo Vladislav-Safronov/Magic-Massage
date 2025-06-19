@@ -9,5 +9,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/Magic-Massage/',
+  base: process.env.VITE_BASE_PATH || "/Magic-Massage",
 })
