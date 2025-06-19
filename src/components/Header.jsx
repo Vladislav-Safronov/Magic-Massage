@@ -33,30 +33,30 @@ function Header() {
 
 
   return (
-    <>
-      <div ref={containerRef} className="flex flex-col justify-center text-center relative min-h-screen bg-[url('/cover.webp')] bg-cover bg-center overflow-hidden">
+    <header >
+      <div ref={containerRef} className="flex flex-col justify-center text-center relative min-h-screen bg-[url('/cover-tree.webp')] bg-cover bg-center overflow-hidden">
 
         {/* Затемнение фона */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* <div className="absolute inset-0 bg-black/60"></div> */}
 
         {/* Центральная картинка */}
-        <div className="inset-0 flex justify-center">
+        <div className="relative z-10 inset-0 flex justify-center">
           <img
             ref={imageRef}
-            src="/logo.svg"  // Ваша маленькая картинка
+            src="logo.svg"  // Ваша маленькая картинка
             alt="Логотип салона Magic Massage"
             className="size-50 transition-transform duration-300 ease-out sm:size-60 md:size-70 lg:size-80 xl:size-100 2xl:size-110"  // Плавность анимации
           />
         </div>
 
         {/* Текст с эффектом наклона */}
-        <div ref={textRef} className=" inset-0 flex flex-col items-center justify-center text-white p-4 transition-transform duration-300 ease-out pb-50">
+        <div ref={textRef} className="relative z-10 inset-0 flex flex-col items-center justify-center text-white p-4 transition-transform duration-300 ease-out pb-50">
           <h1 className="text-3xl font-bold mb-4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Массажный салон <br /> <b className='text-[#FE9740]'>Magic Massage</b> </h1>
           <p className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">Профессиональный массаж в Орле</p>
         </div>
       </div>
 
-    </>
+    </header >
   );
 }
 

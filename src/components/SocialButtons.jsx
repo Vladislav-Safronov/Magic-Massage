@@ -14,7 +14,7 @@ function SocialButtons() {
       },
       {
         name: 'VK',
-        url: 'https://vk.com/im?entrypoint=community_page&media=&sel=-228677304',
+        url: 'https://vk.com/write-228677304',
         bgColor: 'bg-blue-500 hover:bg-blue-600',
         icon: (
           <SiVk />
@@ -31,7 +31,7 @@ function SocialButtons() {
     ];
   
     return (
-      <div className="grid xl:grid-cols-3 gap-4">
+      <div className="grid xl:grid-cols-3 gap-4 ">
         {buttons.map((button, index) => (
           <a
             key={index}
