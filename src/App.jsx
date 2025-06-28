@@ -22,18 +22,11 @@ function App() {
 
      <hr className="h-[4px] bg-black"/>
      
-     
-      <div className="">
+      <div>
         <ServicesSection />
       </div>
 
-      {/* <hr className="h-[5px] bg-black"/> */}
-
       <Map />
- 
-
-
-     
 
     </>
   );

@@ -52,7 +52,7 @@ function Header() {
         {/* Текст с эффектом наклона */}
         <div ref={textRef} className="relative z-10 inset-0 flex flex-col items-center justify-center text-white p-4 transition-transform duration-300 ease-out pb-50">
           <h1 className="text-3xl font-bold mb-4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Массажный салон <br /> <b className='text-[#FE9740]'>Magic Massage</b> </h1>
-          <p className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">Профессиональный массаж в Орле</p>
+          <h2 className="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">Профессиональный массаж в Орле</h2>
         </div>
       </div>
 
