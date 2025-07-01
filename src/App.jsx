@@ -2,6 +2,7 @@ import Header from './components/Header.jsx'
 import SocialButtons from './components/SocialButtons.jsx';
 import ServicesSection from './components/ServicesSection.jsx';
 import Map from './components/Map.jsx';
+import { Analytics } from '@vercel/analytics/react'
 
 
 
@@ -28,6 +29,7 @@ function App() {
 
       <Map />
 
+      <Analytics />
     </>
   );
 
